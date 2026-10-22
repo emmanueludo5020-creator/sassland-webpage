@@ -1,0 +1,7 @@
+FROM nginx:1.30-alpine
+
+RUN rm /usr/share/nginx/html/*
+
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
